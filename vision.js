@@ -13,6 +13,6 @@ var dpi = {
 };
 
 window.onload = function() {
-	console.log('dpi: ' + dpi.get(true));
-	console.log('dpi: ' + dpi.get(false));
+	var node = document.getElementById('out');
+	node.innerHTML='<p>dpi: ' + dpi.get(true) + '</p>';
 };
